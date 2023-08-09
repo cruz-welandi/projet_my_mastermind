@@ -34,11 +34,8 @@ int main(int arg, char** argv) {
 
     for(int round = 0; round < max_attemps; round++){
         printf("Round %d\n", round);
-        //fflush(stdout);
-        printf(">\n");
-        ssize_t bytes_read = read(STDOUT_FILENO, code_entrer, sizeof(code_entrer) - 1);
-         code_entrer[strcspn(code_entrer, "\n")] ='\0';
-        //scanf("%s", code_entrer);
+        printf(">");
+        scanf("%s", code_entrer);
 
         int nbr =0;
         for(int j=0; j<4; j++){
