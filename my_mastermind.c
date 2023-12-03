@@ -63,6 +63,10 @@ int main(int arg, char** argv) {
         printf("Congratz! You did it!\n");
         break;
     }
+    else if(round >= 9 && well_placed !=4){
+        printf("Well placed pieces: %d\nMisplaced pieces: %d\n---\n",well_placed, misplaced);
+        printf("→→→→→→→→\nle code secret est: %s", code_secret);
+    }
     else{
         printf("Well placed pieces: %d\nMisplaced pieces: %d\n---\n",well_placed, misplaced);
     }
